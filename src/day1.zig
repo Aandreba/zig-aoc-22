@@ -9,6 +9,11 @@ const NEW_LINE: u8 = 10;
 
 const Entry = struct { elf: usize, calories: u64 };
 
+pub fn day1() anyerror!void {
+    try part_one();
+    try part_two();
+}
+
 pub fn part_one() anyerror!void {
     const calories = try get_calories();
     defer calories.deinit();
