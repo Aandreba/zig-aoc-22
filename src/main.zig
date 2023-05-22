@@ -7,6 +7,10 @@ const Reader = File.Reader;
 const NEW_LINE: u8 = 10;
 
 pub fn main() anyerror!void {
+    try day1();
+}
+
+fn day1() !void {
     const cwd = std.fs.cwd();
 
     // Open file handle
